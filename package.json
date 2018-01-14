@@ -1,0 +1,8 @@
+{
+  "name": "fade-carousel",
+  "version": "0.0.1",
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}

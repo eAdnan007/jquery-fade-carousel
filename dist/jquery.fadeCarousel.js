@@ -33,6 +33,7 @@
         nextItem %= itemCount;
 
         var newItem = carousel.find(settings.itemSelector).eq(nextItem);
+        slots[nextChangeIndex].fadeOut(settings.duration);
         newItem
             .css({
                 position: 'absolute',
@@ -42,7 +43,6 @@
                 zIndex: 1
             })
             .fadeIn(settings.fadeDuration, function(){
-                slots[nextChangeIndex].css('display', 'none');
                 newItem.css('z-index', 0);
                 slots[nextChangeIndex] = newItem;
                 nextChangeIndex++;
@@ -91,19 +91,20 @@
 
 
         //Set the default settings
-        settings = $.extend({
+        options = $.extend({
             items: 3,
             delay: 4000,
             fadeDuration: 2000,
             itemSelector: '.fade-item',
             responsive: {}
         }, options);
+        settings = $.extend({}, options);
 
         carousel = this;
 
         $(window).on("load resize", function(){
             var minMaxWidth = 999999;
-            var r_settings = {};
+            var r_settings = options;
             $.each(settings.responsive, function(maxWidth, options){
                 if($(window).width() <= maxWidth && minMaxWidth > maxWidth){
                     r_settings = options;

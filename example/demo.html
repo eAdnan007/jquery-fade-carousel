@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Slider with Bootstrap</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../dist/jquery.fadeCarousel.js"></script>
+    <style>
+        .fade-carousel {
+            margin-top: 100px;
+        }
+        .fade-item .item-inner {
+            background-color: darkcyan;
+            color: white;
+            padding: 180px 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row fade-carousel">
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 1</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 2</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 3</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 4</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 5</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 6</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 7</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 8</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 9</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 10</div>
+            </div>
+            <div class="col-sm-3 col-md-4 fade-item">
+                <div class="item-inner">Item 11</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.fade-carousel').fadeCarousel();
+    </script>
+</body>
+</html>

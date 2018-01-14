@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "license": "MIT",
   "devDependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "gulp-uglify": "^3.0.0",
+    "gulp": "^3.9.1",
+    "pump": "^2.0.0",
+    "gulp-rename": "^1.2.2"
   }
 }
